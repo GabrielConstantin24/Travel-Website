@@ -1,0 +1,1134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.filtered {
+    display: none;
+}
+
+/* header */
+
+.logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffa500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(71, 87, 138);
+}
+
+header nav a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 9px 15px;
+    margin: -2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover {
+    background-color: #F2702A;
+    color: #F1F1E5;
+    transition: all 0.3s;
+}
+
+.right-section {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.cos-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right-section img {
+    width: 50px;
+}
+
+.cos-cantitate {
+    color: rgb(240, 136, 4);
+    font-size: 20px;
+    font-weight: 700;
+  
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    
+    width: 26px;
+    text-align: center;
+}
+
+
+
+/* Cos comenzi */
+
+.main-cart {
+    max-width: 1100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlul-paginii {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.titlul-paginii span {
+    color: #ffa500;
+}
+
+.verifica-cosul {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 12px;
+    align-items: start;
+}
+
+@media (max-width: 1000px) {
+    .main-cart {
+      max-width: 500px;
+    }
+  
+    .verifica-cosul {
+      grid-template-columns: 1fr;
+    }
+}
+
+.cos-articol-container,
+.continutul-platii  {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+}
+
+.cos-articol-container {
+    margin-bottom: 12px;
+}
+
+.continutul-platii {
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+    .continutul-platii {
+      grid-row: 1;
+      margin-bottom: 12px;
+    }
+}
+
+.detalii-cos-articol {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 25px;   
+}
+
+@media (max-width: 1000px) {
+    .detalii-cos-articol {
+      grid-template-columns: 100px 1fr;
+      row-gap: 30px;
+    }
+}
+
+.imagine-articol {
+    border-radius: 5px;
+    width: 320px;
+    height: 220px;  
+}
+
+.detalii-articol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nume-articol {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pret-articol {
+    color: rgb(177, 39, 4);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tabel-cantitate{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-link {
+    font-size: 15px;
+    color: rgb(1, 124, 182);
+    cursor: pointer;
+    padding: 3px;
+}
+
+.cart-link:hover {
+    color: rgb(196, 80, 0);
+}
+
+.continutul-platii-titlu {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;   
+}
+
+.continutul-platii-detaliat {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.pret-total {
+    text-align: right;
+}
+
+.subtotal-detalii .pret-total {
+    border-top: 1px solid rgb(222, 222, 222);
+} 
+
+.subtotal-detalii div {
+    padding-top: 9px;
+}
+
+.total-detalii {
+    color: rgb(177, 39, 4);
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid rgb(222, 222, 222);
+    padding-top: 18px;
+}
+
+.continutul-platii-button  {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    margin-top: 11px;
+    margin-bottom: 15px; 
+}
+
+.button-link a {
+    color: rgb(33, 33, 33);
+    
+}
+
+.button-link {
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-link:hover {
+    background-color: rgb(247, 202, 0);
+    border: 1px solid rgb(242, 194, 0);
+}
+/* Acasa */
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/calatorii.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "Portugalia";}
+    30%{content: "Grecia";}
+    40%{content: "Turcia";}
+    50%{content: "Danemarca";}
+    60%{content: "Italia";}
+    70%{content: "Mexic";}
+    80%{content: "Anglia";}
+    90%{content: "Germania";}
+    100%{content: "Olanda";}
+} 
+
+.home .content input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.home .content button{
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content button:hover{
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+/* Destinatii */
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+
+.destinatii,
+.franta,
+.spania,
+.portugalia,
+.grecia,
+.turcia,
+.italia,
+.mexic,
+.anglia,
+.germania,
+.olanda,
+.danemarca {
+    display: flex;
+    max-width: 1200px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.destinatii-cards,
+.franta-cards,
+.spania-cards,
+.portugalia-cards,
+.grecia-cards,
+.turcia-cards,
+.italia-cards,
+.mexic-cards,
+.anglia-cards,
+.germania-cards,
+.olanda-cards,
+.danemarca-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.vacanta {
+    margin: 10px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.destinatii-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.franta-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.spania-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.portugalia-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.grecia-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.turcia-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.italia-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.mexic-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.anglia-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.germania-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.olanda-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.danemarca-cards .vacanta img {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}
+
+.vacanta h3 {
+    margin-top: 4px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.vacanta h6 {
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.vacanta p {
+    margin-top: 5px;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.vacanta button {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(40, 120, 139);
+    border-radius: 5px;
+    border: none;
+}
+
+.vacanta button a {
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.vacanta button a:hover {
+    color: white;
+}
+
+.js-adauga-in-cos {
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.js-adauga-in-cos:hover {
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 10px ;
+    padding: 10px;
+    background: rgb(40, 120, 139);
+    border-radius: 5px;
+    border: none;
+}
+
+.checked{
+    color: #ffa500;
+}
+
+.star {
+    margin-top: 8px;
+}
+
+.star i{
+    font-size: 15px;
+}
+
+/*Servicii */
+
+.servicii {
+    display: flex;
+    max-width: 1200px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.servicii-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.card {
+    margin: 10px;
+    display: block;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.servicii-cards .card i {
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+.servicii-cards .card h3 {
+    margin-top: 8px;
+    font-size: 24px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* About */
+
+.about {
+    padding: 10px;
+    margin-top: 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.about-company {
+    display: flex;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.about img {
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+}
+
+.about-content {
+    margin: 30px;
+}
+
+.about-content h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about-content p{
+    font-weight: 500;
+}
+
+.about-content button {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+
+.credit p {
+    text-decoration: none;
+}
+
+/* Sistem de plati */
+
+.payment-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.payment {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    margin: 0 -16px; 
+}
+
+.checkout-form {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+
+.payment-detalii,
+.checkout-form {
+    padding: 0 16px;
+}
+
+.container-payment {
+    background-color: rgb(108, 114, 25);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightblue;
+    border-radius: 6px;
+}
+
+.payment-detalii input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+}
+
+.payment-detalii label {
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: rgb(75, 116, 34);
+    color: whitesmoke;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: rgb(113, 202, 24);
+}
+
+/* responsive */
+
+/* EXTRA LARGE SCREENS */
+
+@media (width <= 1536px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+
+/* LARGE SCREENS */
+
+@media (width <= 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .home .content p {
+        font-size: 14px;
+    }
+
+    .home .content button {
+        font-size: 14px;
+    }
+
+    .home .content input {
+        font-size: 14px;
+    }
+
+    .destinatii-cards,
+    .franta-cards,
+    .spania-cards,
+    .portugalia-cards,
+    .grecia-cards,
+    .turcia-cards,
+    .italia-cards,
+    .mexic-cards,
+    .anglia-cards,
+    .germania-cards,
+    .olanda-cards,
+    .danemarca-cards,
+    .servicii-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-company {
+        flex-direction: column;
+    }
+
+    .about-content {
+        margin: 0;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-content button {
+        width: 100px;
+    }
+
+    .social-links i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .credit p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+/* LAPTOPS */
+
+@media (width <= 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav {
+        margin-left: 60px;
+    }
+
+    header nav a {
+        font-size: 17px;
+        padding: 9px;
+    }
+
+    .main-cart {
+        max-width: 500px;
+    }
+
+    .verifica-cosul {
+        grid-template-columns: 1fr;
+    }
+
+    .continutul-platii {
+        grid-row: 1;
+        margin-bottom: 12px;
+    }
+
+    .detalii-cos-articol {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .imagine-articol {
+        width: 100%;
+    }
+ 
+    .nume-articol {
+        text-align: center;
+        font-size: 17px;
+    }
+ 
+    .pret-articol {
+        text-align: center;
+        font-size: 17px;
+    }
+ 
+    .cantitate-articol {
+        text-align: center;
+    } 
+
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .home .content button {
+        font-size: 12px;
+    }
+
+    .home .content input {
+        font-size: 12px;
+    }
+
+    .destinatii-cards,
+    .franta-cards,
+    .spania-cards,
+    .portugalia-cards,
+    .grecia-cards,
+    .turcia-cards,
+    .italia-cards,
+    .mexic-cards,
+    .anglia-cards,
+    .germania-cards,
+    .olanda-cards,
+    .danemarca-cards,
+    .servicii-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-company {
+        flex-direction: column;
+    }
+
+    .about-content {
+        margin: 0;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-content button {
+        width: 100px;
+    }
+
+    .social-links i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .credit p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .payment {
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+}
+
+/* TABLETS */
+
+@media (width <= 768px) {
+    .container {
+        max-width: 760px;
+    }
+
+    header .logo {
+        font-size: 17px;
+    }
+
+    header nav {
+        margin-left: 35px;
+    }
+
+    header nav a {
+        font-size: 15px;
+        padding: 4px;
+    }
+
+    .home .content p {
+        font-size: 10px;
+    }
+
+    .home .content button {
+        font-size: 10px;
+    }
+
+    .home .content input {
+        font-size: 10px;
+    }
+
+    .imagine-articol {
+        width: 100%;
+    }
+
+    .nume-articol {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .pret-articol {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .cantitate-articol {
+        text-align: center;
+    }
+
+    .destinatii-cards,
+    .franta-cards,
+    .spania-cards,
+    .portugalia-cards,
+    .grecia-cards,
+    .turcia-cards,
+    .italia-cards,
+    .mexic-cards,
+    .anglia-cards,
+    .germania-cards,
+    .olanda-cards,
+    .danemarca-cards,
+    .servicii-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-company {
+        flex-direction: column;
+    }
+
+    .about-content {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-content button {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .social-links i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .credit p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .payment {
+        padding: 5px;
+        flex-direction: column-reverse;
+    }
+}
+
+/* PHONES */
+
+@media (width <= 640px) {
+    .container {
+        max-width: 100%;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    header nav {
+        margin-left: 10px;
+    }
+
+    header nav a {
+        font-size: 10px;
+    }
+
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+
+    .home .content button {
+        font-size: 10px;
+    }
+
+    .home .content input {
+        font-size: 10px;
+    }
+
+    .destinatii-cards,
+    .franta-cards,
+    .spania-cards,
+    .portugalia-cards,
+    .grecia-cards,
+    .turcia-cards,
+    .italia-cards,
+    .mexic-cards,
+    .anglia-cards,
+    .germania-cards,
+    .olanda-cards,
+    .danemarca-cards,
+    .servicii-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-company {
+        flex-direction: column;
+    }
+
+    .about-content {
+        margin: 5px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-content button {
+        width: 100px;
+    }
+
+    .social-links i {
+        font-size: 18px;
+    }
+
+    .credit p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
